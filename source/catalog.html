@@ -35,9 +35,11 @@
   <main class="main-container">
     <h1 class="visually-hidden">Форма отзыва</h1>
 
-    <section class="promo promo-wrapper">
-      <h2 class="visually-hidden">Седона</h2>
-      <img src="./img/logo-form.svg" width="229" height="39" alt="Добро пожаловать.">
+    <section class="promo">
+      <div class="promo__wrapper">
+        <h2 class="visually-hidden">Седона</h2>
+        <img src="./img/logo-form.svg" width="229" height="39" alt="Добро пожаловать.">
+      </div>
     </section>
 
     <section class="catalog">
@@ -55,7 +57,7 @@
               <p class="catalog__author">Автор фото: <cite>Борис</cite></p>
             </a>
             <button><span class="catalog__button-like visually-hidden">Поставить лайк</span></button>
-            <span class="catalog__like">1350</span>
+            <p class="catalog__like">1350</p>
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
@@ -91,10 +93,11 @@
       </div>
     </section>
 
-    <section class="catalog__video">
+    <section class="video">
       <div class="video__wrapper">
         <h2 class="video_title">Все еще сомневаетесь?</h2>
-        <p class="video__description">?Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+          очередной раз!</p>
         <img class="video__pleer" src="./img/video-catalog.jpg" width="280" height="177" alt="видеопрезентацию">
         <button class="video__button">
           <span class="visually-hidden">Включить видео</span>
@@ -105,24 +108,27 @@
 
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <a class="hashtag__link hashtag" href="#">#visitsedona</a>
-      <ul class="social__list social">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Ссылка Вконтакт</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Ссылка Телеграм</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Ссылки Ютуб</span>
-          </a>
-        </li>
-      </ul>
+      <a class="main-footer__hashtag-link hashtag" href="#">#visitsedona</a>
+      <section class="main_footer__social social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Ссылка Вконтакт</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Ссылка Телеграм</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ссылки Ютуб</span>
+            </a>
+          </li>
+        </ul>
+      </section>
       <div class="main-footer__copyright copyright">
         <span class="copyright__text">Разработано:</span>
         <a class="copyright__link" href="https://htmlacademy.ru/">
