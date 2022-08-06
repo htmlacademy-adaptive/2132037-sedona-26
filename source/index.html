@@ -38,7 +38,7 @@
     <h1 class="visually-hidden">Город Седона</h1>
 
     <section class="promo">
-      <div class="promo_wrapper">
+      <div class="promo__wrapper">
         <h2 class="visually-hidden">Добро пожаловать в седону</h2>
         <img class="promo__image" src="./img/main-header-text.svg" width="282" height="214" alt="Добро пожаловать.">
       </div>
@@ -56,17 +56,17 @@
             <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="./img/photo-city-1.jpg" width="320" height="260" alt="Фото города.">
             <ul class="city__reasons-list">
-              <li class="reasons__item home">
+              <li class="city__reasons-item home">
                 <img class="advantages__image" src="./img/home.svg" width="76" height="72" alt="#">
                 <h3 class="advantages__title">Жильё</h3>
                 <p class="advantages__description">Рекомендуем пожитьв настоящем мотеле,всё как в кино!</p>
               </li>
-              <li class="reasons-item food">
+              <li class="city__reasons-item food">
                 <img class="advantages__image" src="./img/food.svg" width="75" height="70" alt="#">
                 <h3 class="advantages__title">Еда</h3>
                 <p class="advantages__description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="reasons-item souvenirs">
+              <li class="city__reasons-item souvenirs">
                 <img class="advantages__image" src="./img/souvenirs.svg" width="65" height="76" alt="#">
                 <h3 class="advantages__title">Сувениры</h3>
                 <p class="advantages__description">Не только китайского, но и настоящего местного производства!</p>
@@ -104,7 +104,7 @@
         <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
           в
           седоне</p>
-        <a class="search__button button" type="submit" href="#">Найти гостиницу</a>
+        <a class="search__button button" href="#">Найти гостиницу</a>
       </div>
     </section>
 
@@ -123,24 +123,27 @@
 
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <a class="hashtag__link hashtag" href="#">#visitsedona</a>
-      <ul class="social__list social">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Ссылка Вконтакт</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Ссылка Телеграм</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Ссылки Ютуб</span>
-          </a>
-        </li>
-      </ul>
+      <a class="main-footer__hashtag-link" href="#">#visitsedona</a>
+      <section class="main-footer__social social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="social__list social">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Ссылка Вконтакт</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Ссылка Телеграм</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Ссылки Ютуб</span>
+            </a>
+          </li>
+        </ul>
+      </section>
       <div class="main-footer__copyright copyright">
         <span class="copyright__text">Разработано:</span>
         <a class="copyright__link" href="https://htmlacademy.ru/">
