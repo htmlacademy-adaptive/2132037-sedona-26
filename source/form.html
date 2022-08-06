@@ -37,35 +37,35 @@
     <h1 class="visually-hidden">Форма отзыва</h1>
 
     <section class="promo">
-      <div class="promo-wrapper">
+      <div class="promo__wrapper">
         <h2 class="visually-hidden">Седона</h2>
         <img src="./img/logo-form.svg" width="229" height="39" alt="Добро пожаловать.">
       </div>
     </section>
 
-    <section class="date">
-      <div class="date__wrapper">
-        <h2 class="date__title">Оставьте свой отзыв</h2>
-        <p class="date__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+    <section class="review">
+      <div class="review__wrapper">
+        <h2 class="review__title">Оставьте свой отзыв</h2>
+        <p class="review__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
           достопримечательностях</p>
-        <form class="date__form" action="https://echo.htmlacademy.ru/" method="post" id="date">
-          <fieldset class="date__fieldset fieldset" form="date">
+        <form class="review__form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="review__fieldset fieldset">
             <legend class="fieldset__title">Представьтесь:</legend>
-            <div class="fieldset__form form">
-              <input class="form__input" type="text" name="name" id="name" value="Пётр" required>
-              <label class="form__label" for="name">Имя<sup>*</sup>:</label>
+            <div class="fieldset__name">
+              <input class="fieldset__input" type="text" name="name" id="name" value="Пётр" required>
+              <label class="fieldset__label" for="name">Имя<sup>*</sup>:</label>
             </div>
-            <div class="fieldset__form">
-              <input class="form__input" type="text" name="surname" id="surname" value="Пустота" required>
-              <label class="form__label" for="surname">Фамилия<sup>*</sup>:</label>
+            <div class="fieldset__surname">
+              <input class="fieldset__input" type="text" name="surname" id="surname" value="Пустота" required>
+              <label class="fieldset__label" for="surname">Фамилия<sup>*</sup>:</label>
             </div>
-            <div class="fieldset__form">
-              <input class="form__input" type="text" name="patronymic" id="patronymic" value="Викторович">
-              <label class="form__label" for="patronymic">Отчество</label>
+            <div class="fieldset__patronymic">
+              <input class="fieldset__input" type="text" name="patronymic" id="patronymic" value="Викторович">
+              <label class="fieldset__label" for="patronymic">Отчество</label>
             </div>
           </fieldset>
 
-          <fieldset class="date__fieldset fieldset" form="date">
+          <fieldset class="review__fieldset fieldset">
             <legend class="fieldset__title">Контактная информация:</legend>
             <div class="fieldset__form form">
               <input class="form__input" type="tel" name="tel" id="tel" value="Введите телефон" required>
@@ -77,7 +77,7 @@
             </div>
           </fieldset>
 
-          <fieldset class="date__fieldset fieldset" form="date">
+          <fieldset class="review__fieldset fieldset">
             <legend class="fieldset__title">Ваше общее впечатление:</legend>
             <ul class="fieldset__list">
               <li class="fieldset__item">
@@ -104,7 +104,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="date__fieldset fieldset" form="date">
+          <fieldset class="review__fieldset fieldset">
             <legend class="fieldset__title">Посещенные достопримечательности:</legend>
             <ul class="fieldset__list">
               <li class="fieldset__item">
@@ -138,13 +138,13 @@
             </ul>
           </fieldset>
 
-          <div class="date__fieldset fieldset">
+          <div class="review__fieldset fieldset">
             <label class="fieldset__label" for="emotions">Опишите свои эмоции:</label>
             <textarea name="emotions" id="emotions" cols="30" rows="10" class="fieldset__input"
               placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
-          <button class="button-review button">Отправить отзыв</button>
-          <p class="date__inscription"><small>*-Обязательные поля</small></p>
+          <button class="button-review button" type="button">Отправить отзыв</button>
+          <p class="review__inscription"><small>*-Обязательные поля</small></p>
         </form>
       </div>
     </section>
