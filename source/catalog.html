@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Каталог: Седона</title>
 </head>
 
@@ -14,6 +15,11 @@
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle">
+        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
+          <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
+          <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
+        </svg>
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-navigation__list wrapper">
@@ -35,16 +41,16 @@
   <main class="main-container">
     <h1 class="visually-hidden">Форма отзыва</h1>
 
-    <section class="promo">
-      <div class="promo__wrapper">
+    <section class="promo-block">
+      <div class="promo-block__wrapper">
         <h2 class="visually-hidden">Седона</h2>
-        <img src="./img/logo-form.svg" width="229" height="39" alt="Добро пожаловать.">
+        <img class="promo-block__image" src="./img/logo-form.svg" width="229" height="39" alt="Добро пожаловать.">
       </div>
     </section>
 
     <section class="catalog">
       <div class="catalog__wrapper">
-        <h2 class="catalog__title">Фото и видео</h2>
+        <h2 class="catalog__title-page">Фото и видео</h2>
         <p class="catalog__description">
           Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
         </p>
@@ -54,7 +60,7 @@
               <img class="catalog__image" src="./img/photo-1-catalog.jpg" width="280" height="280"
                 alt="Фото Неродные просторы">
               <h3 class="catalog__title"> Неродные просторы</h3>
-              <p class="catalog__author">Автор фото: <cite>Борис</cite></p>
+              <p class="catalog__author">Автор фото: Борис</p>
             </a>
             <button><span class="catalog__button-like visually-hidden">Поставить лайк</span></button>
             <p class="catalog__like">1350</p>
@@ -64,7 +70,7 @@
               <img class="catalog__image" src="./img/photo-2-catalog.jpg" width="280" height="280"
                 alt="Фото Местная растительность">
               <h3 class="catalog__title"> Местная растительность</h3>
-              <p class="catalog__author">Автор фото: <cite>Сергей</cite></p>
+              <p class="catalog__author">Автор фото: Сергей</p>
             </a>
             <button><span class="catalog__button-like visually-hidden">Поставить лайк</span></button>
             <p class="catalog__like">143</p>
@@ -74,7 +80,7 @@
               <img class="catalog__image" src="./img/photo-3-catalog.jpg" width="280" height="280"
                 alt="Фото Дорога на север">
               <h3 class="catalog__title"> Дорога на север</h3>
-              <p class="catalog__author">Автор фото: <cite>Петр</cite></p>
+              <p class="catalog__author">Автор фото: Петр</p>
             </a>
             <button><span class="catalog__button-like visually-hidden">Поставить лайк</span></button>
             <p class="catalog__like">96</p>
@@ -84,7 +90,7 @@
               <img class="catalog__image" src="./img/photo-4-catalog.jpg" width="280" height="280"
                 alt="Фото Мост дьявола">
               <h3 class="catalog__title">Мост дьявола</h3>
-              <p class="catalog__author">Автор фото: <cite>Антон</cite></p>
+              <p class="catalog__author">Автор фото: Антон</p>
             </a>
             <button><span class="catalog__button-like visually-hidden">Поставить лайк</span></button>
             <p class="catalog__like">254</p>

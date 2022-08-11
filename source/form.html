@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Форма отзыва: Седона</title>
 </head>
 
@@ -14,6 +15,11 @@
     </a>
     <nav class="main-navigation">
       <button class="main-navigation__toggle">
+        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
+          <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
+          <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
+        </svg>
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-navigation__list wrapper">
@@ -36,7 +42,7 @@
   <main class="main-container">
     <h1 class="visually-hidden">Форма отзыва</h1>
 
-    <section class="promo">
+    <section class="promo-block">
       <div class="promo__wrapper">
         <h2 class="visually-hidden">Седона</h2>
         <img src="./img/logo-form.svg" width="229" height="39" alt="Добро пожаловать.">
@@ -51,29 +57,29 @@
         <form class="review__form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="review__fieldset fieldset">
             <legend class="fieldset__title">Представьтесь:</legend>
-            <div class="fieldset__name">
-              <input class="fieldset__input" type="text" name="name" id="name" value="Пётр" required>
+            <div class="fieldset__form">
               <label class="fieldset__label" for="name">Имя<sup>*</sup>:</label>
+              <input class="fieldset__input" type="text" name="name" id="name" value="Пётр" required>
             </div>
             <div class="fieldset__form">
-              <input class="fieldset__input" type="text" name="surname" id="surname" value="Пустота" required>
               <label class="fieldset__label" for="surname">Фамилия<sup>*</sup>:</label>
+              <input class="fieldset__input" type="text" name="surname" id="surname" value="Пустота" required>
             </div>
             <div class="fieldset__form">
+              <label class="fieldset__label" for="patronymic">Отчество:</label>
               <input class="fieldset__input" type="text" name="patronymic" id="patronymic" value="Викторович">
-              <label class="fieldset__label" for="patronymic">Отчество</label>
             </div>
           </fieldset>
 
           <fieldset class="review__fieldset fieldset">
             <legend class="fieldset__title">Контактная информация:</legend>
-            <div class="fieldset__surname">
+            <div class="fieldset__form-contact">
+              <label class="fieldset__label" for="tel">Контактный телефон:<sup>*</sup>:</label>
               <input class="fieldset__input" type="tel" name="tel" id="tel" value="Введите телефон" required>
-              <label class="fieldset__label" for="tel">Контактный телефон<sup>*</sup>:</label>
             </div>
-            <div class="fieldset__patronymic">
+            <div class="fieldset__form-contact">
+              <label class="fieldset__label" for="email">Электронная почта:<sup>*</sup>:</label>
               <input class="fieldset__input" type="email" name="email" id="email" value="Введите e-mail" required>
-              <label class="fieldset__label" for="email">Электронная почта<sup>*</sup>:</label>
             </div>
           </fieldset>
 
@@ -87,14 +93,14 @@
                   Скорее положительное
                 </label>
               </li>
-              <li class="fieldset__list">
+              <li class="fieldset__item">
                 <label class="fieldset__label">
                   <input class="fieldset__input visually-hidden" type="radio" name="impression" value="negative">
                   <span class="fieldset__marking fieldset__marking--radio"></span>
                   Скорее отрицательное
                 </label>
               </li>
-              <li class="fieldset__list">
+              <li class="fieldset__item">
                 <label class="fieldset__label">
                   <input class="fieldset__input visually-hidden" type="radio" name="impression" value="difficult">
                   <span class="fieldset__marking fieldset__marking--radio"></span>
@@ -128,7 +134,7 @@
                   Слайд-парк
                 </label>
               </li>
-              <li class="field-group__item">
+              <li class="fieldset__item">
                 <label class="fieldset__label">
                   <input class="fiieldset__input visually-hidden" type="checkbox" name="rocks">
                   <span class="fieldset__marking--checkbox"></span>
@@ -139,12 +145,12 @@
           </fieldset>
 
           <div class="review__fieldset fieldset">
-            <label class="fieldset__label" for="emotions">Опишите свои эмоции:</label>
-            <textarea name="emotions" id="emotions" cols="30" rows="10" class="fieldset__input"
+            <label class="fieldset__title" for="emotions">Опишите свои эмоции:</label>
+            <textarea class="fieldset__text" name="emotions" id="emotions" cols="30" rows="10" class="fieldset__input"
               placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
-          <button class="button-review button" type="button">Отправить отзыв</button>
-          <p class="date__inscription"><small>*-Обязательные поля</small></p>
+          <button class="fieldset__button button" type="button">Отправить отзыв</button>
+          <p class="fieldset__inscription"><small>*-Обязательные поля</small></p>
         </form>
       </div>
     </section>
@@ -195,7 +201,9 @@
       <h2 class="modal-successfully__title">Ваш отзыв отправлен!</h2>
       <p class="modal-successfully__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время
         мы опубликуем его на сайте.</p>
+        <div class="modal-button">
       <button class="modal-successfully__button button">Закрыть окно</button>
+        </div>
     </div>
   </div>
 
