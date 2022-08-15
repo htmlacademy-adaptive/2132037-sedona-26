@@ -48,29 +48,32 @@
 }
 
 .fieldset__input {
-width: 248px;
-height: 26px;
-background-color: #F2F2F2;
-font-size: 18px;
-line-height: 26px;
-font-family: "PT Sans bold", sans-serif;
-border: none;
-padding: 16px;
-}
-
-.fieldset__form-contact .fieldset__input {
-  color: #0000004D;
-}
-
-.fieldset__form, .fieldset__form-contact {
-  margin-top: 16px;
-}
-
-.fieldset__item .fieldset__label {
-  font-family: "PT Sans bold", sans-serif;
-  text-transform: none;
+  width: 248px;
+  height: 26px;
+  background-color: #F2F2F2;
   font-size: 18px;
   line-height: 26px;
+  font-family: "PT Sans bold", sans-serif;
+  border: none;
+  padding: 16px;
+}
+
+
+.fieldset__form-contact {
+  margin-top: 16px;
+
+  .fieldset__input {
+    color: #0000004D;
+  }
+}
+
+.fieldset__item {
+  .fieldset__label {
+    font-family: "PT Sans bold", sans-serif;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 
 .fieldset__list {

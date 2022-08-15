@@ -1,13 +1,13 @@
 .advantages__title {
   padding: 0 19px;
-    width: 282px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 26px;
-    text-transform: uppercase;
-    margin: 0;
-    margin-top: 32px;
- font-family: "PT Sans bold", sans-serif;
+  width: 282px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 32px;
+  font-family: "PT Sans bold", sans-serif;
 }
 
 .advantages__reasons {
@@ -52,60 +52,76 @@
   line-height: 21px;
 }
 
-.city__reasons-list {
-  list-style-type: none;
-  padding: 0;
-}
-
 .advantages__image {
-margin-top: 25px;
+  margin-top: 25px;
 }
 
 .city__reasons-list {
   padding: 0 20px;
   text-align: left;
-}
-
-.city__reasons-list .advantages__title {
-  display: inline ;
-  position: absolute;
-  text-align: left;
-  margin-left: 8px;
+  list-style-type: none;
   padding: 0;
-}
 
-.city__reasons-list .advantages__description {
-width: 225px;
-  padding: 16px 0px 0px 45px;
-  margin: 0;
-  text-align: left;
+  .advantages__title {
+    display: inline;
+    position: absolute;
+    text-align: left;
+    margin-left: 8px;
+    padding: 0;
+  }
+
+  .advantages__description {
+    padding: 16px 0px 0px 45px;
+    margin: 0;
+    text-align: left;
+  }
+
+  .city__reasons-item {
+    background-color: #FFFFFF;
+  }
+
+  .road,
+  .area,
+  .tourists {
+    width: 320px;
+    margin: 0;
+    background-color: #EEEEEE;
+    padding: 24px 0;
+  }
 }
 
 .advantages__blue-block {
   margin-top: 52px;
 }
 
-.city__reasons-list .city__reasons-item  {
-  background-color: #FFFFFF;
-width: 320px;
+.road {
+
+    .advantages__title {
+      margin: 0;
+  }
+
+  .advantages__description {
+    margin: 0;
+  }
 }
 
-.road, .area, .tourists {
-  width: 320px;
- margin: 0;
-background-color: #EEEEEE;
-padding: 24px 0;
+.area {
+    .advantages__title {
+      margin: 0;
+  }
+
+  .advantages__description {
+    margin: 0;
+  }
 }
 
-.road .advantages__title,
-.area .advantages__title,
-.tourists .advantages__title {
-  margin: 0;
+.tourists {
+    .advantages__title {
+      margin: 0;
+  }
 
+  .advantages__description {
+    margin: 0;
+  }
 }
 
-.road .advantages__description,
-.area .advantages__description,
-.tourists .advantages__description {
-  margin: 0;
-}
