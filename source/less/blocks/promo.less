@@ -4,6 +4,30 @@
   padding: 85px 18px;
   width: 284px;
   background-repeat: no-repeat;
-  position: relative;
-  bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url(../../img/back-tablet.jpg);
+    width: 460px;
+    padding: 77px 160px 91px 160px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url(../../img/back-desktop.jpg);
+    width: 460px;
+    padding: 78px 370px 90px 370px;
+  }
+}
+
+.promo__image {
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+    margin: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 450px;
+    height: 350px;
+    margin: auto;
+  }
 }

@@ -1,6 +1,13 @@
 .review__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 60;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 77px;
+  }
 }
 
 .review__title {
@@ -11,6 +18,13 @@
   margin-bottom: 24px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 64px;
+    font-size: 30px;
+    line-height: 26px;
+    padding: 0 150px;
+  }
 }
 
 .review__description {
@@ -21,6 +35,24 @@
   color: #333333;
   margin: 0;
   margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 150px;
+    margin-bottom: 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 257px;
+  }
+}
+
+.review__form-flex {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .fieldset {
@@ -36,8 +68,13 @@
   text-align: center;
   font-size: 18px;
   line-height: 26px;
-  padding-top: 24px;
+  padding: 0;
   display: block;
+  padding-top: 24px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 48px;
+  }
 }
 
 .fieldset__label {
@@ -56,6 +93,10 @@
   font-family: "PT Sans bold", sans-serif;
   border: none;
   padding: 16px;
+
+  @media (min-width: @desktop-width) {
+    width: 398px;
+  }
 }
 
 
@@ -74,11 +115,26 @@
     font-size: 18px;
     line-height: 26px;
   }
+
+  @media (min-width: @tablet-width) {
+    &:first-child {
+      margin-right: 111px;
+    }
+  }
 }
 
 .fieldset__list {
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+  }
 }
 
 .fieldset__text {
@@ -93,10 +149,33 @@
   padding: 16px;
   border: none;
   resize: none;
+
+  @media (min-width: @tablet-width) {
+    width: 616px;
+    height: 180px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 768px;
+    height: 160px;
+    margin-left: 96px;
+  }
 }
 
 .fieldset__button {
   margin-top: 27px;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    margin-top: 48px;
+    margin-left: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 384px;
+    margin-left: 139px;
+  }
 }
 
 .fieldset__inscription {
@@ -104,4 +183,29 @@
   text-align: right;
   text-transform: uppercase;
   color: #33333399;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 71px;
+    margin-left: 168px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 71px;
+    margin-left: 259px;
+  }
+}
+
+.review__fieldset {
+  padding-top: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0 43px;
+  }
+}
+
+.fieldset__inscription-button {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
