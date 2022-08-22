@@ -33,6 +33,15 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
 }
 
 .visually-hidden {
@@ -58,7 +67,7 @@ body {
   cursor: pointer;
   border: none;
   width: 281px;
-  line-height: 56px;
+  line-height: 58px;
 }
 
 img {

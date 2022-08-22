@@ -1,3 +1,18 @@
 .location__google-maps {
   display: none;
 }
+
+.location__image {
+  @media (min-width: @tablet-width) {
+    background-image: url(../../img/map-tablet.jpg);
+    object-fit: scale-down;
+    width: 768px;
+    height: 350px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url(../../img/map-desktop.jpg);
+    width: 1200px;
+    height: 350px;
+  }
+}

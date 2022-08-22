@@ -3,5 +3,26 @@
   padding: 52px 45px 63px 44px;
   background-repeat: no-repeat;
   position: relative;
-  bottom: 40px;
+  bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    background-image: url(../../img/back-desktop-catalog.jpg);
+    padding: 95px 155px 117px 156px;
+    width: 457px;
+    height: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url(../../img/back-desktop-catalog.jpg);
+    padding: 101px 370px 120px 370px;
+    width: 457px;
+    height: auto;
+  }
+}
+
+.promo-block__image {
+  @media (min-width: @tablet-width) {
+    width: 457px;
+    height: auto;
+  }
 }
