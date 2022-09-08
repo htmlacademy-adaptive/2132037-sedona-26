@@ -4,12 +4,12 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  margin: 0;
-  margin-top: 32px;
-  font-family: "PT Sans bold", sans-serif;
+  margin: 32px 0 0;
+  font-weight: 700;
 
   @media (min-width: @tablet-width) {
     padding: 0 124px;
+    font-size: 21px;
   }
 
   @media (min-width: @desktop-width) {
@@ -17,103 +17,109 @@
   }
 }
 
-.advantages__blue-block {
-  .advantages__title {
-    @media (min-width: @tablet-width) {
-      padding: 0;
-      margin: 0;
-      width: 192px;
-    }
+.advantages__title--blue {
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin: 0;
+    width: 192px;
+  }
 
-    @media (min-width: @desktop-width) {
-      padding: 0;
-      margin: 0 auto;
-      width: 185px;
-    }
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    width: 185px;
   }
 }
 
 .advantages__item-city {
   @media (min-width: @tablet-width) {
     display: flex;
+    margin-top: 55px;
   }
 
-  .advantages__image {
-    @media (min-width: @tablet-width) {
-      background-image: url(../../img/photo-city-tablet.jpg);
-      object-fit: scale-down;
-      width: 512px;
-      height: 256px;
-      margin-top: 57px;
-    }
-
-    @media (min-width: @desktop-width) {
-      background-image: url(../../img/photo-city-desktop.jpg);
-      object-fit: scale-down;
-      width: 800px;
-      height: 256px;
-      margin-top: 57px;
-    }
+  @media (min-width: @desktop-width) {
+    margin-top: 44px;
   }
 }
 
+.advantages__image--city {
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
+}
+
+
 .advantages__item-bridge {
+  margin-top: 52px;
   @media (min-width: @tablet-width) {
     display: flex;
     flex-flow: row-reverse;
+    margin-top: 59px;;
   }
 
-  .advantages__image {
-    @media (min-width: @tablet-width) {
-      background-image: url(../../img/photo-bridge-tablet.jpg);
-      object-fit: scale-down;
-      width: 512px;
-      height: 256px;
-      margin-top: 57px;
-    }
+  @media (min-width: @desktop-width) {
+    margin-top: 80px;
+  }
+}
 
-    @media (min-width: @desktop-width) {
-      background-image: url(../../img/photo-bridge-desktop.jpg);
-      object-fit: scale-down;
-      width: 800px;
-      height: 256px;
-      margin-top: 57px;
-    }
+.advantages__image--bridge {
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    height: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
   }
 }
 
 .advantages__item-box {
-
-  .advantages__item {
-    margin: 0;
-    background-color: #EEEEEE;
-    padding: 26px;
-
-    @media (min-width: @tablet-width) {
-      padding: 42px 30px 41px 30px;
-      max-width: 256px;
-    }
-
-    @media (min-width: @desktop-width) {
-      padding: 43px 55px 62px 55px;
-      max-width: 400px;
-    }
-
-    .advantages__title {
-      padding: 0 36px;
-    }
-  }
-
   @media (min-width: @tablet-width) {
     display: flex;
   }
+}
+
+.advantages__item--box {
+  position: relative;
+  margin: 0;
+  background-color: @auxiliary-back-color;
+  padding: 26px 26px 1px;
+
+  @media (min-width: @tablet-width) {
+    padding: 42px 0 41px 0;
+    max-width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 43px 55px 62px 55px;
+    max-width: 400px;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    &:not(:last-child)::after {
+      content: "";
+      background-color: #D6D6D6;
+      width: 284px;
+      height: 1px;
+      position: absolute;
+      left: 18px;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  display: flex;
 }
 
 .advantages__item-grey {
   @media (min-width: @tablet-width) {
     max-width: 256px;
     min-height: 256px;
-    background-color: #EEEEEE;
+    background-color: @auxiliary-back-color;
   }
 }
 
@@ -124,9 +130,7 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  margin: 0;
-  margin-top: 35px;
-  margin-bottom: 32px;
+  margin: 35px 0 32px;
 
   @media (min-width: @tablet-width) {
     padding: 0 124px;
@@ -136,8 +140,6 @@
 
   @media (min-width: @desktop-width) {
     padding: 0 340px;
-    width: 520px;
-    margin-bottom: 0;
   }
 }
 
@@ -150,22 +152,48 @@
 .advantages__blue-block {
   width: 320px;
   padding: 22px 0px 26px 0px;
-  background-color: #81B3D2;
-  color: #FFFFFF;
-  margin-top: 52px;
+  background-color: @starting-back-color;
+  color: @white-color;
+  // margin-top: 52px;
 
   @media (min-width: @tablet-width) {
     width: 192px;
     min-height: 172px;
-    padding: 39px 32px;
-    margin-top: 57px;
+    padding: 40px 32px 44px;
+    // margin-top: 59px;
   }
 
   @media (min-width: @desktop-width) {
     width: 296px;
     min-height: 153px;
-    padding: 45px 52px 54px 52px;
-    margin-top: 57px;
+    padding: 47px 52px 56px 53px;
+    // margin-top: 80px;
+  }
+}
+
+.advantages__blue-block--decor {
+  position: relative;
+
+  @media (max-width: @mobile-width-only) {
+    &::before {
+      content: "";
+      background-image: url(../img/top-border-left.svg);
+      width: 160px;
+      height: 37px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      background-image: url(../img/top-border-right.svg);
+      width: 161px;
+      height: 37px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
   }
 }
 
@@ -174,7 +202,6 @@
   display: block;
   text-align: center;
   margin-top: 11px;
-  margin-bottom: 17px;
 }
 
 .advantages__description {
@@ -206,101 +233,74 @@
   }
 }
 
+.advantages__title--reasons {
+  position: absolute;
+  text-align: left;
+  margin-left: 8px;
+  padding: 0;
+  top: 0;
+  left: 56px;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.advantages__description--reasons {
+  padding: 16px 0px 0px 45px;
+  margin: 0;
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    margin-top: 29px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 59px;
+    text-align: center;
+    margin-top: 29px;
+  }
+}
+
+.city__reasons-item--reasons {
+  position: relative;
+  background-color: @white-color;
+  width: 280px;
+  padding: 0 20px;
+
+
+  @media (min-width: @tablet-width) {
+    width: 184px;
+    padding: 0 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+    width: 284px;
+    padding: 0 58px;
+  }
+}
+
 .city__reasons-list {
   text-align: left;
   list-style-type: none;
   padding: 0;
-
-  .advantages__title {
-    // display: inline;
-    position: absolute;
-    text-align: left;
-    margin-left: 8px;
-    padding: 0;
-    top: 0;
-    left: 56px;
-
-    @media (min-width: @tablet-width) {
-      position: static;
-      // padding: 0 36px;
-      margin: 0;
-      text-align: center;
-    }
-  }
-
-  .advantages__description {
-    padding: 16px 0px 0px 45px;
-    margin: 0;
-    text-align: left;
-
-    @media (min-width: @tablet-width) {
-      margin: 0 auto;
-      text-align: center;
-      margin-top: 29px;
-      padding: 0;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin: 0 auto;
-      padding: 0 59px;
-      text-align: center;
-      margin-top: 29px;
-    }
-  }
-
-  .city__reasons-item {
-    position: relative;
-    background-color: #FFFFFF;
-    width: 280px;
-    padding: 0 20px;
-
-
-    @media (min-width: @tablet-width) {
-      width: 184px;
-      padding: 0 36px;
-    }
-
-    @media (min-width: @desktop-width) {
-      justify-content: space-between;
-      width: 284px;
-      padding: 0 58px;
-    }
-  }
 
   @media (min-width: @tablet-width) {
     display: flex;
   }
 }
 
-.road {
-
-  .advantages__title {
-    margin: 0;
-  }
-
-  .advantages__description {
-    margin: 0;
-    padding: 0 30px;
-  }
+.advantages__description--box {
+  margin: 0;
+  padding: 24px 15px;
 }
 
-.area {
-  .advantages__title {
-    margin: 0;
-  }
-
-  .advantages__description {
-    margin: 0;
-  }
-}
-
-.tourists {
-  .advantages__title {
-    margin: 0;
-  }
-
-  .advantages__description {
-    margin: 0;
-    padding: 0 15px;
-  }
+.advantages__title--box {
+  margin: 0;
+  padding: 0 60px;
 }
