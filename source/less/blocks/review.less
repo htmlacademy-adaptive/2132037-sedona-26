@@ -1,8 +1,10 @@
 .review__wrapper {
-  padding: 0 60;
+  padding: 0 20px;
+  margin-bottom: 41px;
 
   @media (min-width: @tablet-width) {
     padding: 0 17px;
+    margin-bottom: 81px;
   }
 
   @media (min-width: @desktop-width) {
@@ -11,11 +13,10 @@
 }
 
 .review__title {
-  font-family: "PT Sans bold", sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  margin-top: 36px;
-  margin-bottom: 24px;
+  margin: 36px 0 24px;
   text-align: center;
   text-transform: uppercase;
 
@@ -32,16 +33,14 @@
   text-align: center;
   font-size: 14px;
   line-height: 21px;
-  color: #333333;
-  margin: 0;
-  margin-bottom: 28px;
+  color: @auxiliary-color;
+  margin: 0 0 28px;
 
   @media (min-width: @tablet-width) {
-    margin-top: 20px;
+    margin: 20px 0 78px;
     font-size: 14px;
     line-height: 24px;
     padding: 0 150px;
-    margin-bottom: 78px;
   }
 
   @media (min-width: @desktop-width) {
@@ -57,23 +56,21 @@
 
 .fieldset {
   border: none;
-  padding: 0;
-  padding-top: 24px;
-  padding-bottom: 29px;
+  padding: 24px 0 29px;
 }
 
 .fieldset__title {
-  font-family: "PT Sans bold", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   font-size: 18px;
   line-height: 26px;
-  padding: 0;
+  padding: 24px 0 0;
   display: block;
-  padding-top: 24px;
 
   @media (min-width: @tablet-width) {
     padding-top: 48px;
+    margin-bottom: 28px;
   }
 }
 
@@ -81,74 +78,94 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
-  color: #333333;
+  color: @auxiliary-color;
 }
 
 .fieldset__input {
   width: 248px;
   height: 26px;
-  background-color: #F2F2F2;
+  background-color: @light-gray-color;
   font-size: 18px;
   line-height: 26px;
-  font-family: "PT Sans bold", sans-serif;
+  font-weight: 700;
   border: none;
   padding: 16px;
+  font-family: inherit;
 
   @media (min-width: @desktop-width) {
     width: 398px;
   }
 }
 
+.fieldset__input--contact {
+  color: @text-input-color;
+  width: 190px;
+  position: relative;
 
-.fieldset__form-contact {
-  margin-top: 16px;
-
-  .fieldset__input {
-    color: #0000004D;
+  @media (min-width: @desktop-width) {
+    width: 344px;
   }
 }
 
-.fieldset__item {
-  .fieldset__label {
-    font-family: "PT Sans bold", sans-serif;
-    text-transform: none;
-    font-size: 18px;
-    line-height: 26px;
-  }
+.fieldset__form {
+  margin-top: 16px;
 
-  @media (min-width: @tablet-width) {
-    &:first-child {
-      margin-right: 111px;
-    }
+  @media (min-width: @desktop-width) {
+    display: grid;
   }
+}
+
+.fieldset__svg {
+  background-color: @contact-color;
+  padding: 20px;
+  width: 18px;
+  height: 18px;
+}
+
+.fieldset__label--interview {
+  position: relative;
+  font-weight: 700;
+  text-transform: none;
+  font-size: 18px;
+  line-height: 26px;
+  margin-left: 66px;
+}
+
+.fieldset__input--svg {
+  display: flex;
 }
 
 .fieldset__list {
-  padding: 0;
   list-style-type: none;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
-    justify-content: space-between;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 46px;
+    gap: 16px;
+    padding: 0 36px;
   }
 
   @media (min-width: @desktop-width) {
     justify-content: space-between;
+    padding: 0 113px;
   }
 }
 
 .fieldset__text {
-  font-family: "PT Sans bold", sans-serif;
+  font-weight: 700;
   width: 247px;
   height: 118px;
   margin-top: 20px;
-  background-color: #F2F2F2;
-  color: #0000004D;
+  background-color: @light-gray-color;
+  color: @text-input-color;
   font-size: 18px;
   line-height: 26px;
   padding: 16px;
   border: none;
   resize: none;
+  font-family: inherit;
 
   @media (min-width: @tablet-width) {
     width: 616px;
@@ -168,8 +185,7 @@
 
   @media (min-width: @tablet-width) {
     width: 324px;
-    margin-top: 48px;
-    margin-left: 43px;
+    margin: 48px 0 0 43px;
   }
 
   @media (min-width: @desktop-width) {
@@ -182,30 +198,100 @@
   margin: 0;
   text-align: right;
   text-transform: uppercase;
-  color: #33333399;
+  color: @inscription-color;
 
   @media (min-width: @tablet-width) {
-    margin-top: 71px;
-    margin-left: 168px;
+    margin: 71px 0 0 168px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 71px;
     margin-left: 259px;
   }
 }
 
 .review__fieldset {
   padding-top: 24px;
+  margin: 0;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 43px;
+  }
+}
+
+.fieldset__item {
+  margin-top: 36px;
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    padding: 0 43px;
   }
 }
 
 .fieldset__inscription-button {
   @media (min-width: @tablet-width) {
     display: flex;
+  }
+}
+
+.fieldset__marking--radio {
+  position: absolute;
+  top: -10px;
+  left: -61px;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  background-color: @light-gray-color;
+
+  &:hover {
+    background-color: @disabled-color;
+  }
+
+  &:active {
+    background-color: @active-review-color;
+  }
+}
+
+.fieldset__input[type="radio"]:checked+.fieldset__marking--radio::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: @black-color;
+  border-radius: 50%;
+}
+
+.fieldset__marking--checkbox {
+  position: absolute;
+  top: -10px;
+  left: -61px;
+  border-radius: 4px;
+  width: 46px;
+  height: 46px;
+  background-color: @light-gray-color;
+
+  &:hover {
+    background-color: @disabled-color;
+  }
+
+  &:active {
+    background-color: @active-review-color;
+  }
+}
+
+.fieldset__input[type="checkbox"]:checked+.fieldset__marking--checkbox::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 15px;
+  background-image: url(../img/tick.svg);
+  width: 22px;
+  height: 16px;
+}
+
+.fieldset__list--checkbox {
+  @media (min-width: @tablet-width) {
+    margin-left: 48px;
   }
 }
