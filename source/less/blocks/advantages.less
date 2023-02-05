@@ -5,15 +5,28 @@
   text-transform: uppercase;
   margin: 32px auto 0;
   font-weight: 700;
-  padding: 0 20px;
+  padding: 0 25px;
 
   @media (min-width: @tablet-width) {
+    margin-top: 53px;
     font-size: 21px;
+    padding: 0 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 61px;
+    padding: 0 358px;
   }
 
   &--blue {
-    margin-bottom: 20px;
-    padding: 0 67px;
+    margin-bottom: 13px;
+    margin-top: 25px;
+    padding: 0 50px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 32px;
+      margin-bottom: 13px;
+    }
   }
 }
 
@@ -70,6 +83,7 @@
 
   @media (min-width: @desktop-width) {
     padding: 43px 55px 62px 55px;
+    width: 400px;
   }
 
   @media (max-width: @mobile-width-only) {
@@ -107,17 +121,27 @@
   @media (min-width: @tablet-width) {
     padding: 0 124px;
     margin-bottom: 0;
+    margin-top: 29px;
   }
 
   @media (min-width: @desktop-width) {
+    margin-top: 30px;
     padding: 0 340px;
   }
 }
 
 .advantages__list {
   padding: 0;
-  margin: 52px auto 0;
+  margin: 31px auto 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 63px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 44px;
+  }
 }
 
 .advantages__blue-block {
@@ -126,7 +150,7 @@
   color: @white-color;
 
   @media (max-width: @mobile-width-only) {
-    padding: 22px 0px 26px 0px;
+    padding: 22px 0px 31px 0px;
   }
 
   @media (min-width: @tablet-width) {
@@ -140,7 +164,7 @@
 
   @media (min-width: @desktop-width) {
     width: 295px;
-    padding: 15px 52px 33px 53px;
+    padding: 19px 52px 33px 53px;
   }
 }
 
@@ -168,6 +192,12 @@
   display: block;
   text-align: center;
   margin-bottom: 20px;
+  font-size: 14px;
+
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .advantages__description {
@@ -182,18 +212,26 @@
   @media (min-width: @tablet-width) {
     padding: 0 32px;
   }
+
+  @media (min-width: @tablet-width) {
+    padding: 0 16px;
+  }
 }
 
 .advantages__image-svg {
   display: flex;
-  margin-top: 25px;
+  margin-top: 23px;
 
   @media (min-width: @tablet-width) {
+    width: 75px;
+    height: 72px;
     margin: 0 auto 26px;
     justify-content: center;
-    width: 76px;
   }
 
+  @media (min-width: @desktop-width) {
+    margin-bottom: 29px;
+  }
 }
 
 .advantages__title--reasons {
@@ -217,14 +255,13 @@
 
   @media (min-width: @tablet-width) {
     text-align: center;
-    margin-top: 29px;
-    padding: 0 59px;
+    margin-top: 21px;
+    padding: 0 10px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 59px;
     text-align: center;
-    margin-top: 29px;
+    padding: 0;
   }
 }
 
@@ -233,16 +270,55 @@
   background-color: @white-color;
   padding: 0 20px;
 
-
   @media (min-width: @tablet-width) {
-    padding: 60px 0;
+    padding: 54px 0;
+    width: 400px;
   }
 
   @media (min-width: @desktop-width) {
     justify-content: space-between;
-    padding: 60px 58px;
+    padding: 60px 57px;
+    width: 400px;
   }
 }
+
+br {
+  @media (max-width: @desktop-width) {
+    display: none;
+  }
+}
+
+
+.city__reasons-item {}
+
+@media (min-width: @desktop-width) {
+  &--house {
+    .advantages__description {
+      margin-right: 2px;
+      margin-top: 24px;
+    }
+  }
+
+  &--food {
+    padding-top: 64px;
+
+    .advantages__description {
+      margin-top: 23px;
+    }
+  }
+
+  &--souvenirs {
+    .advantages__image-svg {
+      margin-bottom: 25px;
+    }
+
+    .advantages__description {
+      padding: 0 5px;
+      margin-top: 22px;
+    }
+  }
+}
+
 
 .city__reasons-list {
   text-align: left;
@@ -252,14 +328,19 @@
   @media (min-width: @tablet-width) {
     display: flex;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 20px;
+  }
 }
 
 .advantages__description--box {
   margin: 0;
-  padding: 24px 27px;
+  padding: 0;
+  margin-bottom: 18px;
 }
 
 .advantages__title--box {
-  margin: 0 0 20px;
-  padding: 0 60px;
+  margin: 0 0 12px;
+  padding: 0 33px;
 }

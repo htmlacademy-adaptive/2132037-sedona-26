@@ -1,10 +1,14 @@
 .promo__wrapper {
   position: relative;
   background-image: url('../img/back-desktop.jpg');
-  padding: 85px 18px;
+  padding: 91px 18px 87px 18px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover, auto;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 77px;
+  }
 
   @media (min-resolution: 2dppx) {
     background-image: url('../img/back-desktop@2x.jpg');

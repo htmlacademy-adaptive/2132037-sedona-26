@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="./favicon.ico">
   <link rel="icon" href="img/Favicon/32.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
@@ -66,14 +66,15 @@
                 <div class="advantages__blue-block advantages__blue-block--decor">
                   <h3 class="advantages__title advantages__title--blue ">Настоящий городок</h3>
                   <span class="advantages__number">— №1 —</span>
-                  <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                  <p class="advantages__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
                 <picture>
                   <source media="(min-width: 768px)" type="image/webp"
                     srcset="./img/photo-city-desktop.webp 1x, ./img/photo-city-desktop@2x.webp 2x">
                   <source media="(min-width: 468px)" type="image/webp"
                     srcset="./img/photo-city-tablet.webp 1x, ./img/photo-city-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="./img/photo-city-1.webp 1x, ./img/photo-city-1@2x.webp 2x">
+                  <source media="(min-width: 320px)" type="image/webp"
+                    srcset="./img/photo-city-1.webp 1x, ./img/photo-city-1@2x.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="./img/photo-city-desktop.jpg 1x, ./img/photo-city-desktop@2x.jpg 2x">
                   <source media="(min-width: 468px)"
@@ -82,39 +83,40 @@
                     srcset="./img/photo-city-1@2x.jpg 2x" alt="Фото города.">
               </div>
               <ul class="city__reasons-list">
-                <li class="city__reasons-item city__reasons-item--reasons">
+                <li class="city__reasons-item city__reasons-item--reasons city__reasons-item--house">
                   <img class="advantages__image-svg" src="./img/home.svg" width="39" height="37" alt="#">
                   <h3 class="advantages__title advantages__title--reasons">Жильё</h3>
-                  <p class="advantages__description advantages__description--reasons">Рекомендуем пожитьв настоящем
+                  <p class="advantages__description advantages__description--reasons">Рекомендуем пожить в настоящем
                     мотеле,всё как в кино!</p>
                 </li>
-                <li class="city__reasons-item city__reasons-item--reasons">
-                  <img class="advantages__image-svg" src="./img/food.svg" width="39" height="37" alt="#">
+                <li class="city__reasons-item city__reasons-item--reasons city__reasons-item--food">
+                  <img class="advantages__image-svg" src="./img/food.svg" width="40" height="35" alt="#">
                   <h3 class="advantages__title advantages__title--reasons">Еда</h3>
-                  <p class="advantages__description advantages__description--reasons">Всегда заказывайте топовый
+                  <p class="advantages__description advantages__description--reasons">Всегда заказывайте
                     фирменный бургер, вы не разочаруетесь!</p>
                 </li>
-                <li class="city__reasons-item city__reasons-item--reasons">
-                  <img class="advantages__image-svg" src="./img/souvenirs.svg" width="39" height="37" alt="#">
+                <li class="city__reasons-item city__reasons-item--reasons city__reasons-item--souvenirs">
+                  <img class="advantages__image-svg" src="./img/souvenirs.svg" width="32" height="38" alt="#">
                   <h3 class="advantages__title advantages__title--reasons">Сувениры</h3>
-                  <p class="advantages__description advantages__description--reasons">Не только китайского, но и
-                    настоящего местного производства!</p>
+                  <p class="advantages__description advantages__description--reasons">Не только китайского, <br> но и
+                    местного производства!</p>
                 </li>
               </ul>
             </li>
             <li class="advantages__item">
               <div class="advantages__item-bridge">
                 <div class="advantages__blue-block">
-                  <h3 class="advantages__title advantages__title--blue">Там есть мост дьявола</h3>
+                  <h3 class="advantages__title advantages__title--blue">Там есть <br> мост дьявола</h3>
                   <span class="advantages__number">— №2 —</span>
-                  <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                  <p class="advantages__description">Да, по нему можно пройти! <br> Если вы осмелитесь, конечно</p>
                 </div>
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)"
-                  srcset="../img/photo-bridge-desktop.webp 1x, ./img/photo-bridge-desktop@2x.webp 2x">
+                    srcset="../img/photo-bridge-desktop.webp 1x, ./img/photo-bridge-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 468px)"
-                  srcset="../img/photo-bridge-tablet.webp 1x, ./img/photo-bridge-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="./img/photo-bridge.webp 1x, ./img/photo-bridge-1@2x.webp 2x">
+                    srcset="../img/photo-bridge-tablet.webp 1x, ./img/photo-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 320px)"
+                    srcset="./img/photo-bridge.webp 1x, ./img/photo-bridge-1@2x.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="../img/photo-bridge-desktop.jpg 1x, ./img/photo-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 468px)"
@@ -133,11 +135,11 @@
               <li class="advantages__item advantages__item--box">
                 <h3 class="advantages__title advantages__title--box">Красивая дорога</h3>
                 <span class="advantages__number">— №4 —</span>
-                <p class="advantages__description advantages__description--box">Ехать в Седону из Лас-Вегаса совсем не
+                <p class="advantages__description advantages__description--box">Ехать в Седону из Лас-Вегаса совсем <br> не
                   скучно!</p>
               </li>
               <li class="advantages__item advantages__item--box">
-                <h3 class="advantages__title advantages__title--box">Мало туристов</h3>
+                <h3 class="advantages__title advantages__title--box">Мало <br> туристов</h3>
                 <span class="advantages__number">— №5 —</span>
                 <p class="advantages__description advantages__description--box">Большинство едет в Гранд Каньон и
                   толпится там</p>
@@ -150,7 +152,7 @@
       <section class="search">
         <div class="search__wrapper">
           <h2 class="search__title">Заинтересовались?</h2>
-          <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+          <p class="search__description">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения
             гостиниц
             в
             седоне</p>
